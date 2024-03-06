@@ -1189,51 +1189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1462106165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462106160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _positionConstraints:
-    ConstraintsAreRelative: 0
-    XAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-    YAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-    ZAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-  _rotationConstraints:
-    XAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-    YAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
-    ZAxis:
-      ConstrainAxis: 0
-      AxisRange:
-        Min: 0
-        Max: 0
 --- !u!65 &1462106166
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1255,6 +1210,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1462106167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462106160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constraints:
+    ConstraintsAreRelative: 0
+    MinScale:
+      Constrain: 0
+      Value: 0
+    MaxScale:
+      Constrain: 0
+      Value: 0
+    ConstrainXScale: 0
+    ConstrainYScale: 0
+    ConstrainZScale: 0
 --- !u!1001 &1525018531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1266,7 +1244,11 @@ PrefabInstance:
     - target: {fileID: 5063396924701181464, guid: 4a3c8f82a01756d43afc639499c0ce51, type: 3}
       propertyPath: _oneGrabTransformer
       value: 
-      objectReference: {fileID: 1462106165}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063396924701181464, guid: 4a3c8f82a01756d43afc639499c0ce51, type: 3}
+      propertyPath: _twoGrabTransformer
+      value: 
+      objectReference: {fileID: 1462106167}
     - target: {fileID: 5063396924701181465, guid: 4a3c8f82a01756d43afc639499c0ce51, type: 3}
       propertyPath: _rigidbody
       value: 
@@ -1336,7 +1318,7 @@ PrefabInstance:
       addedObject: {fileID: 1462106166}
     - targetCorrespondingSourceObject: {fileID: 5063396924701181466, guid: 4a3c8f82a01756d43afc639499c0ce51, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1462106165}
+      addedObject: {fileID: 1462106167}
   m_SourcePrefab: {fileID: 100100000, guid: 4a3c8f82a01756d43afc639499c0ce51, type: 3}
 --- !u!1 &1531676726
 GameObject:
